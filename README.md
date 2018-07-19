@@ -2,10 +2,11 @@
 ## Make your Slack workspace look more like Discord!
 
 
-### MacOS Automatic Installation Instructions
+### MacOS Automatic Installation Instructions 
 #### Step 1: Run `mac_install` as root in the same folder as Discord4Slack.js
 - `sudo ./mac_install`
 - You may have to `chmod +x mac_install` first if it won't let you execute it
+- Note: If you already have the theme manually installed, please remove it before running this installer. Once you have it installed with the installer, consecutive runs will automatically remove the old version before installing a new one
 
 #### Step 2: Relaunch Slack
 - Get confused by how much it looks like discord and how easy that was!
