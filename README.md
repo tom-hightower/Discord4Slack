@@ -16,7 +16,7 @@
 
 
 
-### Windows Instructions (/Mac Manual Instructions
+### Windows Instructions (/Mac Manual Instructions)
 #### Step 1: Open ssb-interrupt.js in your slack installation in your favorite text editor 
 - Path for Windows: `%AppData%\local\Slack\<your-version-here>\resources\app.asar.unpacked\src\static\ssb-interop.js`
 - Path for Mac: `/Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js` (open as root)

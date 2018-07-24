@@ -1,10 +1,9 @@
-#
+<#
 #	Discord4Slack Windows Automatic Installer!
 #	Created by Tom Hightower, 2018 (v1.0)
 #>
 
-#$file1 = '%AppData%\local\Slack\*\resources\app.asar.unpacked\src\static\ssb-interop.js'
-$file1 = '/Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js'
+$file1 = '%AppData%\local\Slack\*\resources\app.asar.unpacked\src\static\ssb-interop.js'
 
 Write-Host "Discord4Slack Windows Installer! v(=∩_∩=)ﾌ      (v1.0)"
 Write-Host '                          (  0%)\r'
