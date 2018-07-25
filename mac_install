@@ -2,9 +2,9 @@
 
 #  Discord4Slack Mac Automatic Installer!
 #  (Complete with fake progress bar so it looks like stuff is progressing)
-#  Created by Tom Hightower 
+#  Created by Tom Hightower, 2018 (v1.4)
 
-echo 'Discord4Slack Mac Installer! v(=∩_∩=)ﾌ      (v1.2)'
+echo 'Discord4Slack Mac Installer! v(=∩_∩=)ﾌ      (v1.4)'
 echo -ne '                          (  0%)\r'
 
 sed -i -e '/Discord4Slack start/,/Discord4Slack end/d' /Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js
@@ -17,7 +17,7 @@ done
 for i in {41..48}
 do
    echo -ne "#######                   ( $i%)\r"
-   sleep .2
+   sleep .1
 done
 echo -ne '############              ( 50%)\r'
 echo "//### Discord4Slack start auto-generated line (Don't remove pls) ###" >> /Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js
@@ -35,9 +35,9 @@ done
 echo "//### Discord4Slack end auto-generated line (Don't remove pls) ###" >> /Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js
 
 echo -ne '#################         ( 72%)\r'
-sleep .2
+sleep .1
 echo -ne '###################       ( 87%)\r'
-sleep .5
+sleep .4
 echo -ne '#######################   (100%)'
 echo -ne '\n'
 echo 'Done!  Reload Slack to see changes (✿ ◠‿◠)'
