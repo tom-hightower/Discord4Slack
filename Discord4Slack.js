@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	.p-flexpane_header, #flex_contents .heading, #client-ui #team_list_container .searchable_member_list_input { background: #23272A; border-bottom: 1px solid #7289da; }
 	.c-dialog__footer .p-file_upload_dialog__footer_share_inputs, .c-dialog__title, #flex_contents .heading_text, .searchable_member_list_filter .faux_input { color: #FFF; }
 	.p-downloads_list__shift_hint, p-app_actions_pillow--gradient { background: linear-gradient(180deg,hsla(0,0%,100%,0),#23272A 25%,#23272A); }
-	.p-download_item__container .p-download_item__name_row, .c-input_select_options_list__option { color: #FFF; }
+	.p-download_item__container .p-download_item__name_row, .c-input_select_options_list__option, .p-app_dialog__title_text, .p-app_dialog_elements, .c-input_textarea { color: #FFF; }
 	.pinned_item, .p-app_actions_pillow { border: 1px solid #7289da; }
 	.p-app_actions_dialog__message { border-top: 1px solid #7289da; border-bottom: 1px solid #7289da; }
 	#threads_msgs .inline_message_input_container.with_file_upload .inline_file_upload:hover .upload_plus_icon { color: #7289da !important; }
