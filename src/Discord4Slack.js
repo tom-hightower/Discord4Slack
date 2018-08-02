@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	.c-search_modal .popover>div, .c-search__input_box, .c-search_autocomplete footer, .c-dialog__content, .c-dialog__header, .c-dialog__footer { background: var(--notQuiteBlack); color: var(--fullWhite); }
     `;
     $.ajax({
-        url: 'https://gist.githubusercontent.com/tom-hightower/64c37e1382221a30b4198a9cb7d29fe0/raw/7c0007db205870cd84ea3b11af500b3eaa9c7f67/tomsDarkSlack.css',
+        url: 'https://github.com/tom-hightower/Discord4Slack/blob/master/src/discordTheme.css',
         success: function(css) {
             $('<style></style>').appendTo('head').html(css + tt__customCss);
         }
