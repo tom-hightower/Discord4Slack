@@ -24,7 +24,7 @@ echo "//### Discord4Slack start auto-generated line (Don't remove pls) ###" >> /
 sleep .1
 echo -ne '#############             ( 51%)\r'
 
-cat Discord4Slack.js >> /Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js
+cat src/Discord4Slack.js >> /Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js
 
 for i in {58..65}
 do

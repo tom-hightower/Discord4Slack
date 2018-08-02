@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	.c-search_modal .popover>div, .c-search__input_box, .c-search_autocomplete footer, .c-dialog__content, .c-dialog__header, .c-dialog__footer { background: var(--notQuiteBlack); color: var(--fullWhite); }
     `;
     $.ajax({
-        url: 'https://github.com/tom-hightower/Discord4Slack/blob/master/src/discordTheme.css',
+        url: 'https://raw.githubusercontent.com/tom-hightower/Discord4Slack/master/src/discordTheme.css',
         success: function(css) {
             $('<style></style>').appendTo('head').html(css + tt__customCss);
         }

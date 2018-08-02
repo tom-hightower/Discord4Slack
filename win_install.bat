@@ -21,6 +21,7 @@ exit
 SET @interopPath=%@newPath%
 SET @interopFile=%@interopPath%ssb-interop.js
 SET @interopTemp=%@interopPath%.ssb-interop.js
+SET @themePath=src/Discord4Slack.js
 find /c "/Discord4Slack start/" %@interopFile%
 if %errorlevel% equ 1 goto notfound
 
@@ -44,7 +45,7 @@ del %@interopTemp%
 
 :notfound
 echo //Discord4Slack start// >> %@interopFile%
-type Discord4Slack.js >> %@interopFile%
+type %@themePath% >> %@interopFile%
 echo //Discord4Slack end// >> %@interopFile%
 
 echo                                                                    #######    
