@@ -2473,6 +2473,8 @@ input[type="text"].p-emoji_picker__input:focus { border-color: var(--trueGrey); 
 
 .c-input_select--open_panel, .p-app_actions_dialog .c-dialog__footer { background: var(--notQuiteBlack) !important; }
 
+.c-search_modal .popover>div, .c-search__input_box, .c-search_autocomplete footer, .c-dialog__content, .c-dialog__header, .c-dialog__footer { background: var(--notQuiteBlack); color: var(--fullWhite); }
+
 .p-apps_browser__apps_list--loading::before { background-color: var(--notBlack); }
 
 .p-apps_browser__category_section--tutorial .p-apps_browser__app { border-color: var(--trueGrey); box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15); }
