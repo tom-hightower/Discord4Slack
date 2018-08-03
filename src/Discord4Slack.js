@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	input[type=text], .p-file_list__file_type_select .c-input_select__selected_value--placeholder { color: var(--fullWhite) !important; box-shadow: none !important; }
 	.c-search_autocomplete__suggestion_content .c-search_autocomplete__suggestion_text .token, .c-search_autocomplete__suggestion_content, .ql-container.texty_single_line_input { color: var(--fullWhite) !important; }
 	.c-filter_input, .c-input_select_options_list_container { color: var(--fullWhite); background-color: var(--trueGrey) !important; border: 1px solid var(--blurple) !important; }
+	#reply_container.upload_in_threads .inline_message_input_container { background-color: rgb(129, 131, 134) !important; }
 	ts-message:hover, ts-thread .collapse_inline_thread_container:hover, ts-thread .view_all_replies_container:hover { background: var(--notBlack) !important; }
     `;
     $.ajax({
