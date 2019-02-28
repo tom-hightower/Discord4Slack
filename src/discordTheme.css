@@ -2475,7 +2475,9 @@ input[type="text"].p-emoji_picker__input:focus { border-color: var(--trueGrey); 
 
 .c-input_select--open_panel, .p-app_actions_dialog .c-dialog__footer { background: var(--notQuiteBlack) !important; }
 
-.c-search_modal:not(.c-search_modal--primarysearch) .c-search__input_box, .c-search_modal .popover>div, .c-search__input_box, .c-search_autocomplete footer, .c-dialog__content, .c-dialog__header, .c-dialog__footer { background: var(--notQuiteBlack); color: var(--fullWhite); }
+.c-search_modal:not(.c-search_modal--primarysearch) .c-search__input_box, .c-search_modal .popover>div, .c-search__input_box, .c-search_autocomplete footer, .c-dialog__content, .c-dialog__header, .c-dialog__footer { background: var(--notQuiteBlack) !important; color: var(--fullWhite) !important; }
+
+.c-search_modal:not(.c-search_modal--primarysearch) { background-color: rgba(0,0,0,.4); }
 
 .p-apps_browser__apps_list--loading::before { background-color: var(--notBlack); }
 
