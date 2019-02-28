@@ -458,6 +458,8 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 .menu ul li a { background: var(--notBlack); border-bottom: 0; color: var(--notWhite); }
 
+.menu ul li a:not(.inline_menu_link) { color: var(--notWhite); }
+
 .menu ul li a.delete_link { color: #bf360c; }
 
 .menu ul li.highlighted a { background: var(--notBlack); border-bottom-color: #000; color: var(--notWhite); text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
