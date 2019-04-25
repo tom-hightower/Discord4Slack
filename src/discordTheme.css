@@ -24,7 +24,7 @@ h1 a { color: var(--notWhite); }
 
 h1 a:active, h1 a:hover, h1 a:link, h1 a:visited { color: var(--notWhite); }
 
-.p-threads_view__footer, .p-threads_view_reply, .p-threads_view_root { border: 1px solid var(--blurple); }
+.p-threads_view__footer, .p-threads_view_reply, .p-threads_view_root { border: 1px solid var(--blurple) !important; }
 
 .bordered { border: 1px solid var(--notBlack); }
 
