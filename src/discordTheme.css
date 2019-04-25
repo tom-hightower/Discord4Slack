@@ -24,7 +24,22 @@ h1 a { color: var(--notWhite); }
 
 h1 a:active, h1 a:hover, h1 a:link, h1 a:visited { color: var(--notWhite); }
 
-.p-threads_view__footer, .p-threads_view_reply, .p-threads_view_root { border: 1px solid var(--blurple) !important; }
+.p-threads_view__footer {
+  border-left: 2px solid var(--blurple) !important;
+  border-right: 2px solid var(--blurple) !important;
+  border-bottom: 2px solid var(--blurple) !important;
+}
+
+.p-threads_view_reply {
+  border-left: 2px solid var(--blurple) !important;
+  border-right: 2px solid var(--blurple) !important;
+}
+
+.p-threads_view_root {
+  border-left: 2px solid var(--blurple) !important;
+  border-right: 2px solid var(--blurple) !important;
+  border-top: 2px solid var(--blurple) !important;
+}
 
 .bordered { border: 1px solid var(--notBlack); }
 
