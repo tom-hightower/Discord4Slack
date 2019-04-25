@@ -757,7 +757,7 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 .channel_title_info, #channel_topic_text, #client_body { background: var(--notBlack) !important; background-color: var(--notBlack) !important; }
 
-.p-threads_view, .p-threads_view__default_background { background: var(--notBlack) !important; background-color: var(--notBlack) !important; }
+.p-threads_view, .p-threads_view__default_background, .p_threads_view_load_older_button { background: var(--notBlack) !important; background-color: var(--notBlack) !important; }
 
 #im_title.away { color: var(--greyple); }
 
