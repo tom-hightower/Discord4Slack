@@ -732,7 +732,7 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 .channel_title .channel_name_container .muted_icon:hover { color: #bf360c; }
 
-.channel_title_info, #channel_topic_text, #client_body { background: var(--notBlack) !important; background-color: var(--notBlack) !important; }
+.channel_title_info, #channel_topic_text, #client_body, .p-threads_view { background: var(--notBlack) !important; background-color: var(--notBlack) !important; }
 
 #im_title.away { color: var(--greyple); }
 
