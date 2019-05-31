@@ -31,6 +31,15 @@ h1 a:active, h1 a:hover, h1 a:link, h1 a:visited { color: var(--notWhite); }
   border-top: none;
 }
 
+.p-threads_view__divider_line {
+  border-top: 1px solid var(--blurple) !important;
+}
+
+.p-threads_view__divider_label {
+  background: var(--blurple) !important;
+  color: var(--notWhite) !important;
+}
+
 .p-threads_view_reply {
   border-top: none;
   border-bottom: 1px solid var(--greyple) !important;
