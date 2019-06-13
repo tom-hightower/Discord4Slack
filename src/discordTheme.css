@@ -2695,9 +2695,9 @@ input[type="text"].p-emoji_picker__input:focus { border-color: var(--trueGrey); 
 
 .fs_modal_file_viewer_content #file_comment { color: var(--notWhite); }
 
-#file_comment_textarea.texty_comment_input { background: var(--notBlack); border-color: var(--notBlack); color: var(--notWhite); }
+#file_comment_textarea.texty_comment_input { background: var(--notBlack); border: 1px solid var(--trueGrey) !important; border-radius: .25rem; color: var(--notWhite); }
 
-#file_comment_textarea.texty_comment_input.focus, #file_comment_textarea.texty_comment_input:hover { border-color: var(--notBlack); }
+#file_comment_textarea.texty_comment_input.focus, #file_comment_textarea.texty_comment_input:hover { border-color: var(--blurple); }
 
 #fs_modal.help_modal #fs_modal_footer .help_modal_status #no_open_issues { color: var(--greyple); }
 
