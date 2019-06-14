@@ -898,6 +898,8 @@ nav.p-channel_sidebar .p-channel_sidebar__channel--selected, .p-channel_sidebar_
 
 .c-message__broadcast_preamble_outer, .c-message__broadcast_preamble { color: var(--greyple); }
 
+.c-message_kit__file__meta { color: var(--greyple) !important; }
+
 .c-message__sender { color: var(--notWhite); }
 
 .c-message__sender a { color: var(--notWhite); }
