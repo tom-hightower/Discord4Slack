@@ -760,7 +760,7 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 .channel_header .blue_on_hover:hover { color: var(--notWhite); }
 
-#client_body:not(.onboarding)::before { background: var(--notBlack); border-bottom: 1px solid var(--notBlack); box-shadow: inset 1px 0 0 0 var(--notBlack); }
+#client_body:not(.onboarding)::before { background: var(--notBlack) !important; border-bottom: 1px solid var(--notBlack); box-shadow: inset 1px 0 0 0 var(--notBlack); }
 
 .messages_header { color: var(--notWhite); }
 
@@ -860,7 +860,10 @@ nav.p-channel_sidebar .p-channel_sidebar__channel--selected, .p-channel_sidebar_
 
 #col_messages { box-shadow: inset 1px 0 0 0 var(--notBlack); }
 
-.c-mrkdwn__broadcast--mention, .c-mrkdwn__broadcast--mention:hover, .c-mrkdwn__highlight, .c-mrkdwn__mention, .c-mrkdwn__mention:hover, .c-mrkdwn__subteam--mention, .c-mrkdwn__subteam--mention:hover, .mention_yellow_bg { color: var(--greyple) !important; }
+.c-mrkdwn__broadcast--mention, .c-mrkdwn__broadcast--mention:hover, .c-mrkdwn__highlight, .c-mrkdwn__mention, .c-mrkdwn__mention:hover, .c-mrkdwn__subteam--mention, .c-mrkdwn__subteam--mention:hover, .mention_yellow_bg {
+  color: var(--notWhite) !important;
+  background: var(--blurple) !important;
+}
 
 .c-message:hover .c-message__broadcast_preamble_outer, .c-message:hover .c-message__broadcast_preamble { color: var(--greyple); }
 
