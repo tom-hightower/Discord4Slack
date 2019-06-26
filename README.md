@@ -3,7 +3,7 @@
 ### v2.2.9
 
 ### Automatic Installation Instructions
-#### Step 1: Run the installer for your OS as root in the same folder as Discord4Slack.js 
+#### Step 1: Clone the repo and run the installer for your OS as root
 - WINDOWS: run `win_install.bat`
 - MAC: `sudo ./mac_install`
   - You may have to `chmod +x mac_install` first if it won't let you execute it
