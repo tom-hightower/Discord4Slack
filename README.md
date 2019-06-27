@@ -1,6 +1,6 @@
 # Discord4Slack
 ## Make your Slack workspace look more like Discord!
-### v2.2.9
+### v2.3.0
 
 ### Automatic Installation Instructions
 #### Step 1: Clone the repo and run the installer for your OS as root
