@@ -766,7 +766,7 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 .channel_header .blue_on_hover:hover { color: var(--notWhite); }
 
-#client_body:not(.onboarding)::before { background: var(--notBlack) !important; border-bottom: 1px solid var(--notBlack); box-shadow: inset 1px 0 0 0 var(--notBlack); }
+#client_body:not(.onboarding)::before { background: var(--notBlack) !important; border-bottom: 1px solid var(--notBlack); box-shadow: inset 1px 0 0 0 var(--notBlack) !important; }
 
 .messages_header { color: var(--notWhite); }
 
