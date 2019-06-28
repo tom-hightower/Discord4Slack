@@ -6,6 +6,7 @@
   --fullBlack: #000000;
   --blurple: #7289da;
   --notWhite: #e6e6e6;
+  --whiteSmoke: #f5f5f5;
   --trueGrey: #545454;
   --lightGrey: #818386;
   --keyLime: #0cbf72;
@@ -27,12 +28,6 @@ a:visited {
   color: var(--greyple);
 }
 
-a:hover,
-a:active,
-a:focus {
-  color: var(--notWhite);
-}
-
 hr {
   border-bottom: 1px solid var(--notBlack);
   border-top: 1px solid var(--notBlack);
@@ -41,18 +36,17 @@ hr {
 h1,
 h2,
 h3,
-h4 {
-  color: var(--notWhite);
-}
-
-h1 a {
-  color: var(--notWhite);
-}
-
+h4,
+h1 a,
 h1 a:active,
 h1 a:hover,
 h1 a:link,
-h1 a:visited {
+h1 a:visited,
+a:hover,
+a:active,
+a:focus,
+.alert h4,
+.alert-info h4 {
   color: var(--notWhite);
 }
 
@@ -129,17 +123,9 @@ h1 a:visited {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 
-.alert h4 {
-  color: var(--notWhite);
-}
-
 .alert-info {
   background-color: var(--notBlack);
   border-color: var(--fullBlack);
-  color: var(--notWhite);
-}
-
-.alert-info h4 {
   color: var(--notWhite);
 }
 
@@ -157,16 +143,8 @@ h1 a:visited {
   color: var(--notBlack) !important;
 }
 
-::-webkit-scrollbar-corner {
-  background: var(--notBlack) !important;
-}
-
 .supports_custom_scrollbar #messages_container::after {
   background: none !important;
-}
-
-.monkey_scroll_bar {
-  background: var(--notBlack);
 }
 
 .monkey_scroll_handle_inner {
@@ -174,21 +152,9 @@ h1 a:visited {
   border: 1px solid var(--greyple);
 }
 
-.monkey_scroll_bar_native_scrollbar_shim {
-  background: transparent;
-}
-
-#client-ui .monkey_scroll_bar {
-  background: var(--notBlack);
-}
-
 #client-ui .monkey_scroll_handle_inner {
   background: var(--trueGrey);
   border: 3px solid var(--notBlack);
-}
-
-.c-scrollbar--monkey .c-scrollbar__track {
-  background: var(--notBlack);
 }
 
 .c-scrollbar--monkey .c-scrollbar__bar {
@@ -201,13 +167,98 @@ h1 a:visited {
   border-right-color: var(--notBlack);
 }
 
-#col_channels {
-  color: var(--notWhite);
+.c-menu {
+  background-color: var(--notBlack) !important;
+  color: var(--notWhite) !important;
+}
+
+.c-menu_separator__li {
+  color: var(--blurple) !important;
+}
+
+.c-menu_separator__separator {
+  border-top: 1px solid var(--blurple) !important;
 }
 
 .p-channel_sidebar {
   background: var(--notQuiteBlack) !important;
   color: var(--notWhite);
+}
+
+#col_channels,
+.c-menu_item__button,
+.c-menu_item__button:link,
+.c-menu_item__button:visited,
+.c-menu_item__icon,
+.c-menu_item__header,
+.channels_list_holder h2,
+.channels_list_holder ul,
+.btn_basic:focus,
+.btn_basic:hover,
+.btn_link:hover,
+.btn_link:focus,
+.btn_outline:active,
+.btn_outline.active,
+.input_note,
+.lazy_filter_select .lfs_list .lfs_item.selected .c-member__current-status .prevent_copy_paste,
+.lazy_filter_select .lfs_list .lfs_item.selected .c-member__current-status--small::before,
+.lazy_filter_select .lfs_list .lfs_item.selected .c-member__display-name,
+.lazy_filter_select .lfs_list .lfs_item.selected .c-member__name,
+.lazy_filter_select .lfs_list .lfs_item.selected .c-member__secondary-name,
+.lazy_filter_select .lfs_list .lfs_item.selected,
+.lazy_filter_select .lfs_token::after,
+.lazy_filter_select.single .lfs_input_container.active::after,
+.lazy_filter_select.single .lfs_input_container:hover::after,
+#select_share_channels .lazy_filter_select .lfs_value .lfs_item.selected,
+.p-channel_sidebar__channel--selected,
+.p-channel_sidebar__channel--selected:link,
+.p-channel_sidebar__channel--selected:visited,
+.p-channel_sidebar__channel--selected:hover,
+.p-channel_sidebar__channel--selected::before,
+.p-channel_sidebar__channel--selected:hover::before,
+.p-channel_sidebar__channel--selected::after,
+.p-channel_sidebar__channel--selected:hover::after,
+.p-channel_sidebar__channel--im.p-channel_sidebar__channel--selected .c-presence,
+.p-channel_sidebar__channel--im-slackbot.p-channel_sidebar__channel--selected::before,
+.p-channel_sidebar__header,
+.p-channel_sidebar__link--selected::before,
+.p-channel_sidebar__link--selected::after,
+.p-channel_sidebar__link--selected,
+.p-channel_sidebar__link--selected:link,
+.p-channel_sidebar__link--selected:visited,
+.p-channel_sidebar__link--selected:hover,
+#loading_message p,
+label.disabled {
+  color: var(--notWhite) !important;
+}
+
+#team_menu {
+  color: var(--fullWhite) !important;
+}
+
+.no_touch label.select:not(.disabled):hover::after {
+  color: var(--notBlack);
+}
+
+.btn_link,
+.help-block,
+.help-inline,
+.lazy_filter_select .lfs_list .lfs_item.disabled,
+.p-channel_sidebar__channel--im .c-presence--away,
+#select_share_channels .lazy_filter_select .lfs_value .lfs_item.selected .ts_icon:not(.presence_icon),
+#select_share_channels .lazy_filter_select .lfs_item,
+#select_share_channels .lazy_filter_select .lfs_item .ts_icon:not(.presence_icon),
+legend small {
+  color: var(--greyple) !important;
+}
+
+.p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name,
+.p-channel_sidebar__link--unread .p-channel_sidebar__name,
+.p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
+.p-channel_sidebar__section_heading_label--clickable:hover,
+.p-channel_sidebar__quickswitcher:hover,
+.channels_list_holder ul li.unread:not(.muted_channel) .primary_action {
+  color: var(--whiteSmoke) !important;
 }
 
 .p-channel_sidebar__channel,
@@ -221,33 +272,27 @@ h1 a:visited {
   color: rgba(230, 230, 230, 0.8) !important;
 }
 
-.p-channel_sidebar__channel--selected,
-.p-channel_sidebar__channel--selected:link,
-.p-channel_sidebar__channel--selected:visited,
-.p-channel_sidebar__channel--selected:hover,
-.p-channel_sidebar__link--selected,
-.p-channel_sidebar__link--selected:link,
-.p-channel_sidebar__link--selected:visited,
-.p-channel_sidebar__link--selected:hover {
-  color: var(--notWhite);
-}
-
+#client-ui .monkey_scroll_bar,
+.c-scrollbar--monkey .c-scrollbar__track,
+.monkey_scroll_bar,
 .p-channel_sidebar__channel:hover,
-.p-channel_sidebar__link:hover {
+.p-channel_sidebar__link:hover,
+.channels_list_holder ul li .primary_action.im_name:hover .im_name_background,
+.channels_list_holder ul li .primary_action.feature_user_custom_status:hover .im_name_background,
+.channels_list_holder ul li .primary_action:not(.feature_user_custom_status):hover,
+.lazy_filter_select.disabled,
+.loading #loading-zone,
+::-webkit-scrollbar-corner,
+body.loading #team_menu,
+body.loading #quick_switcher_btn,
+body.loading #team_menu_overlay,
+body.loading #col_channels_overlay,
+body.loading #col_channels {
   background: var(--notBlack) !important;
 }
 
-.p-channel_sidebar__header {
-  color: var(--notWhite) !important;
-}
-
-.p-channel_sidebar__channel--im.p-channel_sidebar__channel--selected .c-presence,
-.p-channel_sidebar__channel--im-slackbot.p-channel_sidebar__channel--selected::before {
-  color: var(--notWhite);
-}
-
-.p-channel_sidebar__channel--im .c-presence--away {
-  color: var(--greyple);
+select {
+  background: var(--trueGrey);
 }
 
 .c-presence--active {
@@ -255,25 +300,12 @@ h1 a:visited {
 }
 
 .p-channel_sidebar__channel--selected,
-.p-channel_sidebar__link--selected {
-  background: var(--trueGrey) !important;
-}
-
+.p-channel_sidebar__link--selected,
 .p-channel_sidebar__channel--selected:hover,
-.p-channel_sidebar__link--selected:hover {
+.p-channel_sidebar__link--selected:hover,
+.p-channel_sidebar .c-custom_scrollbar__thumb_vertical,
+.p-channel_sidebar .c-scrollbar__bar {
   background: var(--trueGrey) !important;
-}
-
-.p-channel_sidebar__channel--selected::before,
-.p-channel_sidebar__channel--selected:hover::before,
-.p-channel_sidebar__channel--selected::after,
-.p-channel_sidebar__channel--selected:hover::after {
-  color: var(--notWhite);
-}
-
-.p-channel_sidebar__link--selected::before,
-.p-channel_sidebar__link--selected::after {
-  color: var(--notWhite);
 }
 
 .p-channel_sidebar__badge,
@@ -281,38 +313,18 @@ h1 a:visited {
   background: var(--errRed);
 }
 
-.p-channel_sidebar .c-custom_scrollbar__thumb_vertical,
-.p-channel_sidebar .c-scrollbar__bar {
-  background: var(--trueGrey);
-}
-
-.p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name,
-.p-channel_sidebar__link--unread .p-channel_sidebar__name,
-.p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
-.p-channel_sidebar__section_heading_label--clickable:hover,
-.p-channel_sidebar__quickswitcher:hover {
-  color: whitesmoke !important;
-}
-
 .p-channel_sidebar__close_container:hover {
   background: var(--fullBlack);
 }
 
+.monkey_scroll_bar_native_scrollbar_shim,
 .p-channel_sidebar__jumper {
   background: transparent !important;
-}
-
-.channels_list_holder h2 {
-  color: var(--notWhite) !important;
 }
 
 .channels_list_holder h2.hoverable:not(.jquery_hover):hover {
   color: var(--notWhite);
   opacity: 0.8;
-}
-
-.channels_list_holder ul {
-  color: var(--notWhite) !important;
 }
 
 .channels_list_holder ul li {
@@ -338,12 +350,6 @@ h1 a:visited {
   border-top-right-radius: 0.25rem;
 }
 
-.channels_list_holder ul li .primary_action.im_name:hover .im_name_background,
-.channels_list_holder ul li .primary_action.feature_user_custom_status:hover .im_name_background,
-.channels_list_holder ul li .primary_action:not(.feature_user_custom_status):hover {
-  background: var(--notBlack);
-}
-
 .p-custom_status_input__dialog .p-custom_status_input__preset_option,
 .p-custom_status_input__dialog .p-custom_status_input__preset_option:link,
 .p-custom_status_input__dialog .p-custom_status_input__preset_option:visited {
@@ -361,10 +367,6 @@ h1 a:visited {
 
 .channels_list_holder ul li.mention a {
   color: var(--notWhite);
-}
-
-.channels_list_holder ul li.unread:not(.muted_channel) .primary_action {
-  color: whitesmoke !important;
 }
 
 .channels_list_holder ul li.unread .prefix {
@@ -428,16 +430,8 @@ h1 a:visited {
   color: var(--greyple);
 }
 
-.loading #loading-zone {
-  background: var(--notBlack);
-}
-
 #loading_welcome {
-  background-image: none;
-}
-
-#loading_message p {
-  color: var(--notWhite);
+  background-image: none !important;
 }
 
 #loading_message #loading_message_attribution {
@@ -450,21 +444,9 @@ h1 a:visited {
   border: none;
 }
 
-#team_menu {
-  color: var(--fullWhite) !important;
-}
-
 .infinite_spinner_bg,
 .infinite_spinner_blue {
   stroke: var(--notWhite);
-}
-
-body.loading #team_menu,
-body.loading #quick_switcher_btn,
-body.loading #team_menu_overlay,
-body.loading #col_channels_overlay,
-body.loading #col_channels {
-  background-color: var(--notBlack);
 }
 
 .p-degraded_list__loading {
@@ -518,10 +500,6 @@ input[type=checkbox]:focus {
   outline: var(--notWhite) dotted thin;
 }
 
-select {
-  background: var(--trueGrey);
-}
-
 select,
 textarea {
   border: 1px solid var(--fullBlack);
@@ -536,6 +514,10 @@ textarea:focus {
   box-shadow: 0 0 7px rgba(130, 130, 130, 0.15);
 }
 
+.no_touch input:hover,
+.no_touch label.select:hover select,
+.no_touch select:hover,
+.no_touch textarea:hover,
 input:disabled,
 input:disabled:active,
 select:disabled,
@@ -543,30 +525,8 @@ textarea:disabled {
   border-color: var(--notBlack) !important;
 }
 
-.no_touch input:hover,
-.no_touch select:hover,
-.no_touch textarea:hover {
-  border-color: var(--notBlack);
-}
-
-.no_touch label.select:hover select {
-  border-color: var(--notBlack);
-}
-
-.no_touch label.select:not(.disabled):hover::after {
-  color: var(--notBlack);
-}
-
-label.disabled {
-  color: var(--notWhite);
-}
-
 legend {
   border-bottom: 1px solid var(--greyple);
-}
-
-legend small {
-  color: var(--greyple);
 }
 
 .uneditable-input,
@@ -653,11 +613,6 @@ textarea[readonly] {
 .form-actions {
   background-color: var(--notBlack);
   border-top: 1px solid var(--notBlack);
-}
-
-.help-block,
-.help-inline {
-  color: var(--greyple);
 }
 
 .input-append .add-on,
@@ -751,11 +706,6 @@ textarea[readonly] {
   border-color: var(--greyple);
 }
 
-.btn_basic:focus,
-.btn_basic:hover {
-  color: var(--notWhite);
-}
-
 .btn_outline {
   background: var(--notBlack);
   color: var(--greyple) !important;
@@ -794,23 +744,6 @@ textarea[readonly] {
   color: var(--notWhite) !important;
 }
 
-.btn_outline:active {
-  color: var(--notWhite);
-}
-
-.btn_outline.active {
-  color: var(--notWhite) !important;
-}
-
-.btn_link {
-  color: var(--greyple);
-}
-
-.btn_link:hover,
-.btn_link:focus {
-  color: var(--notWhite);
-}
-
 .btn-group.open .btn.dropdown-toggle {
   background-color: var(--trueGrey);
 }
@@ -843,10 +776,6 @@ textarea[readonly] {
   border-top-color: var(--notWhite);
 }
 
-.input_note {
-  color: var(--notWhite);
-}
-
 .c-enhanced_text_input {
   background-color: var(--trueGrey);
   border-color: var(--notBlack);
@@ -856,10 +785,6 @@ textarea[readonly] {
 .c-enhanced_text_input:hover,
 .c-enhanced_text_input.c-enhanced_text_input--active {
   border-color: var(--trueGrey);
-}
-
-.lazy_filter_select.disabled {
-  background: var(--notBlack);
 }
 
 .lazy_filter_select.disabled input.lfs_input {
@@ -886,22 +811,6 @@ textarea[readonly] {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
-.lazy_filter_select .lfs_list .lfs_item.selected {
-  color: var(--notWhite);
-}
-
-.lazy_filter_select .lfs_list .lfs_item.selected .c-member__current-status .prevent_copy_paste,
-.lazy_filter_select .lfs_list .lfs_item.selected .c-member__current-status--small::before,
-.lazy_filter_select .lfs_list .lfs_item.selected .c-member__display-name,
-.lazy_filter_select .lfs_list .lfs_item.selected .c-member__name,
-.lazy_filter_select .lfs_list .lfs_item.selected .c-member__secondary-name {
-  color: var(--notWhite) !important;
-}
-
-.lazy_filter_select .lfs_list .lfs_item.disabled {
-  color: var(--greyple);
-}
-
 .lazy_filter_select .lfs_list .lfs_item.active {
   background-color: var(--fullBlack);
   border-color: var(--notBlack);
@@ -914,33 +823,8 @@ textarea[readonly] {
   color: var(--notWhite);
 }
 
-.lazy_filter_select .lfs_token::after {
-  color: var(--notWhite);
-}
-
-.lazy_filter_select.single .lfs_input_container.active::after,
-.lazy_filter_select.single .lfs_input_container:hover::after {
-  color: var(--notWhite);
-}
-
 .c-select_button {
   background-color: var(--notQuiteBlack) !important;
-}
-
-#select_share_channels .lazy_filter_select .lfs_value .lfs_item.selected {
-  color: var(--notWhite) !important;
-}
-
-#select_share_channels .lazy_filter_select .lfs_value .lfs_item.selected .ts_icon:not(.presence_icon) {
-  color: var(--greyple) !important;
-}
-
-#select_share_channels .lazy_filter_select .lfs_item {
-  color: var(--greyple) !important;
-}
-
-#select_share_channels .lazy_filter_select .lfs_item .ts_icon:not(.presence_icon) {
-  color: var(--greyple) !important;
 }
 
 #message_edit_form .emo_menu {
