@@ -1,11 +1,11 @@
 ::
 ::	Discord4Slack Windows Automatic Installer!
-::	Created by Tom Hightower, 2018 (v0.9)
+::	Created by Tom Hightower, 2018 (v1.1)
 ::
 @echo off
 setlocal
 
-echo Discord4Slack Windows Installer!     (v0.9)
+echo Discord4Slack Windows Installer!     (v1.1)
 
 SET @interopPath=%localappdata%\Slack\
 SET @newPath=0
