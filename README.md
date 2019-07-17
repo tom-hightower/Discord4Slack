@@ -6,7 +6,7 @@
 
 ### Automatic Installation Instructions
 
-#### Step 1: Clone the repo and run the installer as root (works on OSX, Linux, and Windows (via WSL))
+#### Step 1: Clone the repo and run the installer as root (works on OSX, Linux, and Windows (via WSL, bash/powershell support coming soon))
 
 - `sudo ./install.sh`
   - You may have to `chmod +x install.sh` first if it won't let you execute it
