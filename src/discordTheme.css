@@ -406,26 +406,17 @@ select {
   border-top: 2px solid var(--notBlack);
 }
 
-#quick_switcher_btn>i {
-  color: var(--greyple);
-}
-
 #quick_switcher_btn:active,
 #quick_switcher_btn:hover {
   background: var(--notBlack);
   border-color: var(--notBlack);
 }
 
+#quick_switcher_btn>i,
 #quick_switcher_btn:active>i,
-#quick_switcher_btn:hover>i {
-  color: var(--greyple);
-}
-
+#quick_switcher_btn:hover>i,
 #quick_switcher_btn:active #quick_switcher_label,
-#quick_switcher_btn:hover #quick_switcher_label {
-  color: var(--greyple);
-}
-
+#quick_switcher_btn:hover #quick_switcher_label,
 #quick_switcher_label {
   color: var(--greyple);
 }
@@ -471,6 +462,12 @@ input[type=search] {
   background-color: var(--trueGrey);
   border-color: var(--fullBlack);
   color: var(--notWhite);
+}
+
+input[type=text],
+.p-file_list__file_type_select .c-input_select__selected_value--placeholder {
+  color: var(--fullWhite) !important;
+  box-shadow: none !important;
 }
 
 input[type=text]:focus,
@@ -5894,10 +5891,7 @@ input[type="text"].p-emoji_picker__input:focus {
 .current_status_container .current_status_input.focus~.current_status_emoji_picker .current_status_empty_emoji,
 .current_status_input_container .current_status_input.focus~.current_status_emoji_picker .current_status_empty_emoji,
 .inline_message_input_container .current_status_input.focus~.current_status_emoji_picker .current_status_empty_emoji,
-.share_channel_modal_contents .current_status_input.focus~.current_status_emoji_picker .current_status_empty_emoji {
-  color: var(--notWhite);
-}
-
+.share_channel_modal_contents .current_status_input.focus~.current_status_emoji_picker .current_status_empty_emoji,
 #message_edit_form #msg_input.focus~#primary_file_button:not(:hover):not(.active),
 #message_edit_form #msg_input.focus~.emo_menu,
 #message_edit_form #msg_input:focus~#primary_file_button:not(:hover):not(.active),
@@ -5921,10 +5915,7 @@ input[type="text"].p-emoji_picker__input:focus {
 .share_channel_modal_contents #msg_input.focus~#primary_file_button:not(:hover):not(.active),
 .share_channel_modal_contents #msg_input.focus~.emo_menu,
 .share_channel_modal_contents #msg_input:focus~#primary_file_button:not(:hover):not(.active),
-.share_channel_modal_contents #msg_input:focus~.emo_menu {
-  color: var(--notWhite);
-}
-
+.share_channel_modal_contents #msg_input:focus~.emo_menu,
 #message_edit_form .message_input:focus~#primary_file_button:not(:hover):not(.active),
 #message_edit_form .message_input:focus~.emo_menu,
 #msg_form .message_input:focus~#primary_file_button:not(:hover):not(.active),
@@ -5971,23 +5962,20 @@ input[type="text"].p-emoji_picker__input:focus {
   background: var(--notBlack);
 }
 
-.rxn.active .emoji_rxn_count,
-.rxn:hover .emoji_rxn_count,
-.c-reaction.active .emoji_rxn_count,
-.c-reaction:hover .emoji_rxn_count,
-.c-reaction_add.active .emoji_rxn_count,
-.c-reaction_add:hover .emoji_rxn_count,
-.c-member_slug.active .emoji_rxn_count,
-.c-member_slug:hover .emoji_rxn_count {
-  color: var(--notWhite);
-}
-
 .rxn.c-reaction--reacted,
 .c-reaction.c-reaction--reacted,
 .c-reaction_add.c-reaction--reacted,
 .c-member_slug.c-reaction--reacted {
   background-color: rgba(66, 66, 66, 0.08);
   border-color: rgba(130, 130, 130, 0.4);
+}
+
+.c-reaction--reacted,
+.rxn.user_reacted,
+.c-reaction__count {
+  color: var(--blurple) !important;
+  background-color: var(--notBlack) !important;
+  border-color: var(--blurple) !important;
 }
 
 .rxn.c-reaction--reacted .emoji_rxn_count,
@@ -5997,10 +5985,15 @@ input[type="text"].p-emoji_picker__input:focus {
 .c-reaction_add.c-reaction--reacted .emoji_rxn_count,
 .c-reaction_add.c-reaction--reacted .c-reaction__count,
 .c-member_slug.c-reaction--reacted .emoji_rxn_count,
-.c-member_slug.c-reaction--reacted .c-reaction__count {
-  color: var(--notWhite);
-}
-
+.c-member_slug.c-reaction--reacted .c-reaction__count,
+.rxn.active .emoji_rxn_count,
+.rxn:hover .emoji_rxn_count,
+.c-reaction.active .emoji_rxn_count,
+.c-reaction:hover .emoji_rxn_count,
+.c-reaction_add.active .emoji_rxn_count,
+.c-reaction_add:hover .emoji_rxn_count,
+.c-member_slug.active .emoji_rxn_count,
+.c-member_slug:hover .emoji_rxn_count,
 .rxn .emoji_rxn_count,
 .rxn .c-reaction__count,
 .c-reaction .emoji_rxn_count,
@@ -6134,6 +6127,13 @@ p-app_actions_pillow--gradient {
   color: var(--fullWhite);
 }
 
+.c-filter_input,
+.c-input_select_options_list_container {
+  color: var(--fullWhite);
+  background-color: var(--trueGrey) !important;
+  border: 1px solid var(--blurple) !important;
+}
+
 .p-download_item__actions {
   background: var(--notBlack) !important;
 }
@@ -6153,6 +6153,12 @@ p-app_actions_pillow--gradient {
   color: var(--notWhite) !important;
 }
 
+.c-input_select {
+  background-color: var(--trueGrey) !important;
+  border: 1px solid var(--blurple) !important;
+  color: var(--fullWhite) !important;
+}
+
 .c-search_modal:not(.c-search_modal--primarysearch) .c-search__input_box,
 .c-search_modal .popover>div,
 .c-search__input_box,
@@ -6164,8 +6170,20 @@ p-app_actions_pillow--gradient {
   color: var(--fullWhite) !important;
 }
 
+.c-search_autocomplete__suggestion_content .c-search_autocomplete__suggestion_text .token, .c-search_autocomplete__suggestion_content,
+.ql-container.texty_single_line_input {
+  color: var(--fullWhite) !important;
+}
+
 .c-search_autocomplete__suggestion_item {
   color: var(--notWhite) !important;
+}
+
+.c-search_autocomplete__suggestion__highlighted,
+.p-share_dialog_message_input {
+  background-color: var(--notBlack) !important;
+  border: 1px solid var(--blurple) !important;
+  color: var(--fullWhite) !important;
 }
 
 .c-search_modal:not(.c-search_modal--primarysearch) {

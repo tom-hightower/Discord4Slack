@@ -2,8 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     let tt__customCss = `
-	.c-reaction--reacted, .rxn.user_reacted { background-color: var(--notBlack) !important; border-color: var(--blurple) !important; }
-	.rxn.user_reacted .emoji_rxn_count, .c-reaction--reacted .c-reaction__count { color: var(--blurple) !important; border-color: var(--blurple) !important; }
+	.rxn.user_reacted .emoji_rxn_count, .c-reaction--reacted .c-reaction__count { color: var(--blurple) !important;  background-color: var(--notBlack) !important; border-color: var(--blurple) !important; }
 	.c-search_autocomplete__suggestion__highlighted, .p-share_dialog_message_input { background-color: var(--notBlack) !important; border: 1px solid var(--blurple) !important; color: var(--fullWhite) !important; }
 	.c-input_select { background-color: var(--trueGrey) !important; border: 1px solid var(--blurple) !important; color: var(--fullWhite) !important; }
 	input[type=text], .p-file_list__file_type_select .c-input_select__selected_value--placeholder { color: var(--fullWhite) !important; box-shadow: none !important; }
