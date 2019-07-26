@@ -2,14 +2,16 @@
 
 ## Make your Slack workspace look more like Discord!
 
-### v3.0.0 (for Slack 4.0.0 Production)
+### v3.0.1 (for Slack 4.0.0 Production)
 
 ### Automatic Installation Instructions
 
+##### Requires Slack 4.0.0 or later, Node.js, and npm
+
 #### Step 1: Clone the repo and run the installer as root (works on OSX, Linux, and Windows (via WSL))
 
-- `sudo ./install.sh`
-  - You may have to `chmod +x install.sh` first if it won't let you execute it
+- `./install.sh`
+  - You may have to `chmod +x install.sh` first if it won't let you execute it (and run as root on some systems)
 - Note: Most updates are pulled in automatically. On major version updates you may need to remove the old version before installing the new version (see [Removing](#Removing) below)
 
 #### Step 2: Relaunch Slack
@@ -26,7 +28,7 @@ Most updates are pulled in on Slack launch. On major version updates: If you ins
 
 ### Removing
 
-To remove Discord4Slack, edit line 8 of `install.sh` to be `REVERT=true` and then run the installer.
+To remove Discord4Slack, run the command `./install.sh --uninstall`
 
 ### Manual Installation Instructions
 

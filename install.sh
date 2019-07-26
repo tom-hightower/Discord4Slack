@@ -2,14 +2,14 @@
 
 #   Discord4Slack multi-platform Automatic Installer!
 #   (Complete with fake progress bar so it looks like stuff is progressing)
-#   Created by Tom Hightower, 2018 (v3.0)
+#   Created by Tom Hightower, 2018 (v3.0.1)
 #   Credit to Kevin Smithson for the multi-platform and restore support!
 
 REVERT=false
 
 while test $# -gt 0; do
   case "$1" in
-    --revert)
+    --uninstall)
       REVERT=true
       shift
       ;;
@@ -69,7 +69,6 @@ if ! command -v npx >/dev/null 2>&1; then
   exit 1
 fi
 
-echo ""
 echo "This script may require sudo privileges."
 echo ""
 for i in {33..40}
@@ -77,17 +76,16 @@ do
    echo -ne "######                    ( $i%)\r"
    sleep .1
 done
+
+sudo npx asar extract ${SLACK_RESOURCES_DIR}/app.asar ${SLACK_RESOURCES_DIR}/app.asar.unpacked > /dev/null 2>&1
+
 for i in {41..48}
 do
    echo -ne "#######                   ( $i%)\r"
    sleep .1
 done
-echo -ne '############              ( 50%)\r'
-echo ""
-
-sudo npx asar extract ${SLACK_RESOURCES_DIR}/app.asar ${SLACK_RESOURCES_DIR}/app.asar.unpacked
-
 sleep .1
+echo -ne '############              ( 50%)\r'
 echo -ne '#############             ( 51%)\r'
 
 if [ "$REVERT" = true ]; then
@@ -102,10 +100,10 @@ do
    sleep .1
 done
 
-sudo npx asar pack ${SLACK_RESOURCES_DIR}/app.asar.unpacked ${SLACK_RESOURCES_DIR}/app.asar
+sudo npx asar pack ${SLACK_RESOURCES_DIR}/app.asar.unpacked ${SLACK_RESOURCES_DIR}/app.asar > /dev/null 2>&1
 
 echo -ne '#################         ( 72%)\r'
-sleep .1
+sleep .2
 echo -ne '###################       ( 87%)\r'
 sleep .4
 echo -ne '#######################   (100%)'
