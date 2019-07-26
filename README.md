@@ -8,7 +8,7 @@
 
 ##### Requires Slack 4.0.0 or later, Node.js, and npm
 
-#### Step 1: Clone the repo and run the installer as root (works on OSX, Linux, and Windows (via WSL))
+#### Step 1: Clone the repo and run the installer (works on OSX, Linux, and Windows (via WSL, cmd/powershell support coming soon))
 
 - `./install.sh`
   - You may have to `chmod +x install.sh` first if it won't let you execute it (and run as root on some systems)
