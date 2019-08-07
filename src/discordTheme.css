@@ -183,7 +183,10 @@ a:focus,
   border-top: 1px solid var(--blurple) !important;
 }
 
-.p-classic_nav,
+.p-classic_nav {
+  background: var(--notBlack) !important;
+}
+
 .p-classic_nav__team_header,
 .p-channel_sidebar {
   background: var(--notQuiteBlack) !important;
