@@ -180,9 +180,14 @@ a:focus,
   border-top: 1px solid var(--blurple) !important;
 }
 
+.p-classic_nav__team_header,
 .p-channel_sidebar {
   background: var(--notQuiteBlack) !important;
   color: var(--notWhite);
+}
+
+.p-classic_nav__team_header:hover {
+  background var(--notQuiteBlack) !important;
 }
 
 #col_channels,
