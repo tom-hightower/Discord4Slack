@@ -1,5 +1,8 @@
 # Discord4Slack
 
+---
+## Note: The most recent versions of Slack have broken this theme; hopefully it will be updated soon when a workaround is found
+---
 ## Make your Slack workspace look more like Discord!
 
 ### v3.0.1 (for Slack 4.0.0 Production)
