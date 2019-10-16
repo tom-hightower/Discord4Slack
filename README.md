@@ -1,7 +1,7 @@
 # Discord4Slack
 
 ---
-## Note: The most recent versions of Slack have broken this theme; hopefully it will be updated soon when a workaround is found
+## Note: Due to Slack's official dark theme and a patch for the css injection in 4.0.1 that made this theme work, this repository is now deprecated
 ---
 ## Make your Slack workspace look more like Discord!
 
